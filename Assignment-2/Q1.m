@@ -13,7 +13,7 @@ mdl_a = fitlm(X,y);
 % Positively correlated with all except N2O
 %% Part b) - outlier removal
 error_var = sum((y-X*beta_hat_class-intercept).^2)/(n-p-1);
-CI = [beta_hat_class - sqrt(error_var*inv(Xs'*Xs)), beta_hat_class + sqrt(error_var*inv(X'*X))];
+% CI = [beta_hat_class - sqrt(error_var*inv(Xs'*Xs)), beta_hat_class + sqrt(error_var*inv(X'*X))];
 res = y-X*beta_hat_class-intercept;
 std_res = (res - mean(res))/sqrt(error_var);
 plot(std_res,'x');hold on; yline(2,'r');yline(-2,'r');
