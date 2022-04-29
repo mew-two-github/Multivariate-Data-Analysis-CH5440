@@ -10,7 +10,7 @@ N = length(u);
 % OLS
 [alpha_OLS, beta_OLS, uhat_OLS, yhat_OLS,s_OLS] = OLS(u,y);
 sigma_e_OLS = 1/(N-2)*sum((y-alpha_OLS*u-beta_OLS).^2);
-CI_OLS = [alpha_OLS-2.16*sigma_e_OLS,alpha_OLS+2.16*sigma_e_OLS];
+CI_OLS = [alpha_OLS-2.16*sqrt(sigma_e_OLS/N/s_OLS.suu),alpha_OLS+2.16*sqrt(sigma_e_OLS/N/s_OLS.suu)];
 % IOLS
 [alpha_IOLS, beta_IOLS, uhat_IOLS, yhat_IOLS,s_IOLS] = IOLS(u,y);
 sigma_e_IOLS = 1/(N-2)*sum((y-alpha_IOLS*u-beta_IOLS).^2);
