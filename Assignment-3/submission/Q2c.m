@@ -55,5 +55,3 @@ Yavgs = Yavg*inv(diag(sigma_e));
 [~,~,v] = svd(Yavgs,'econ');
 T = Yavgs*v(:,1:3);
 B = (T'*T)\T'*concavg;
-errors = (T*B-concavg)/size(Yavg,1);
-RMSE = norm(errors(:));
