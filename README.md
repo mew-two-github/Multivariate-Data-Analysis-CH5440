@@ -1,5 +1,5 @@
 # Multivariate-Data-Analysis-CH5440
-Assignments given in the course Multivariate Data Analysis for Process Modelling, Fall 2022. Following concepts were dealt with:
+Assignments given in the course Multivariate Data Analysis for Process Modelling, Spring 2022. Following concepts were dealt with:
 ## Assignment-1:
 * Bivariable OLS, TLS, WTLS: analysis of the methods and their applications, including, CVAT and property comparison.
 ## Assignment-2:
